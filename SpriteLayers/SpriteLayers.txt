@@ -1,0 +1,5 @@
+To sort sprites into layers:
+	> Use the overloaded SpriteBatch.Draw method which inlcudes a layer depth
+	> In SpriteBatch.Begin() add an argument i.e.:
+		> SpriteSortMode.Deferred //default: ignores layer values
+		> SpriteSortMode.FrontToBack //higher layer values are drawn infront
