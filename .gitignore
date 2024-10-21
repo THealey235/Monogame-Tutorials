@@ -1,0 +1,6 @@
+/MonoGame.txt
+*.sln
+.config/
+bin/
+obj/
+.vs/
