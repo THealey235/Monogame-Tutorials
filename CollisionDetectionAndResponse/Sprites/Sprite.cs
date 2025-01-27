@@ -45,10 +45,12 @@ namespace CollisionDetectionAndResponse.Sprites
         #region Collison
         protected bool IsTouchingLeft(Sprite sprite)
         {
-            return this.Rectangle.Right + this.Velocity.X > sprite.Rectangle.Left &&
+            return this.Rectangle.Right + this.Velocity.X > sprite.Rectangle.Left && // I believe that this should be a less than sign instead*
                 this.Rectangle.Left < sprite.Rectangle.Left && 
                 this.Rectangle.Bottom > sprite.Rectangle.Top &&
                 this.Rectangle.Top < sprite.Rectangle.Bottom;
+            //* When used in another project this code only works when it was a less than sign, however that may have been because my other project used different
+            // conventions and methods of calculating velocity.
         }
 
         protected bool IsTouchingRight(Sprite sprite)
